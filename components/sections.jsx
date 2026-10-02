@@ -147,13 +147,7 @@ export function Portfolio() {
           </article>
         ))}
       </div>
-      <div className="mt-6 flex items-center gap-4 rounded-3xl border border-ink/10 bg-paper/70 p-4" data-aos="fade-up">
-        <QR value={D.portfolioAll} size={84} />
-        <div>
-          <p className="font-display font-medium">Portofolio lengkap</p>
-          <p className="mt-1 text-sm text-mute">Scan untuk melihat semua konten dan case study.</p>
-        </div>
-      </div>
+
     </Section>
   );
 }
