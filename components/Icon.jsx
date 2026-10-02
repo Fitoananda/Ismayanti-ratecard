@@ -3,6 +3,7 @@ import {
   Video, Clapperboard, Smartphone, LayoutGrid, Star, Shirt, ShoppingBag, Camera,
   RefreshCw, CalendarClock, Package, FileCheck, Megaphone, Lock, Wallet,
   Lightbulb, Scissors, Palette, BarChart3, Mail, MessageCircle, Music2, Instagram, Circle,
+  Send, MapPin, Repeat2,
 } from "lucide-react";
 
 // Daftar icon eksplisit agar bundle kecil. Tambahkan icon baru di sini
@@ -11,6 +12,7 @@ const map = {
   Video, Clapperboard, Smartphone, LayoutGrid, Star, Shirt, ShoppingBag, Camera,
   RefreshCw, CalendarClock, Package, FileCheck, Megaphone, Lock, Wallet,
   Lightbulb, Scissors, Palette, BarChart3, Mail, MessageCircle, Music2, Instagram,
+  Send, MapPin, Repeat2,
 };
 
 export default function Icon({ name, size = 20, className }) {

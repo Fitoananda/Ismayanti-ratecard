@@ -14,7 +14,7 @@ export default function Nav() {
         aria-label="Navigasi utama"
         className="mx-auto flex max-w-6xl items-center gap-2 rounded-full border border-ink/10 bg-cream/80 p-1.5 pl-4 backdrop-blur-xl"
       >
-        <a href="#top" className="shrink-0 font-display text-sm font-semibold tracking-tight">Neng.</a>
+        <a href="#top" className="shrink-0 font-display text-sm font-semibold tracking-tight">Ismay</a>
         <ul className="no-scrollbar flex flex-1 items-center gap-1 overflow-x-auto px-2 text-[13px] text-mute [scrollbar-width:none]">
           {links.map(([id, label]) => (
             <li key={id}>

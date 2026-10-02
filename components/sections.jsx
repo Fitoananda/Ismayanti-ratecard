@@ -180,13 +180,13 @@ export function Services() {
 /* 8. PRICING ---------------------------------------------- */
 export function Pricing() {
   return (
-    <Section id="pricing" title="Harga & paket" desc="Harga dalam Rupiah, belum termasuk pajak. Harga dapat berubah mengikuti performa terbaru.">
+    <Section id="pricing" title="Harga & paket" desc="Harga dapat berubah mengikuti performa terbaru.">
       <div className="mb-4" data-aos="fade-up">
-        <p className="font-display text-xl font-semibold">Rate Card Product Review</p>
+        <p className="font-display text-xl font-semibold">Rate Card Product Review Tiktok</p>
       </div>
 
       <div className="overflow-hidden rounded-[22px] border border-ink/10 bg-paper" data-aos="fade-up">
-        {D.rates.map((r, index) => (
+        {D.ratesTiktok.map((r, index) => (
           <div key={`${r.title}-${index}`} className="border-b border-ink/10 px-5 py-5 last:border-b-0 md:px-6">
             <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
               <div className="min-w-0">
@@ -209,7 +209,8 @@ export function Pricing() {
         ))}
       </div>
 
-      <h3 className="mb-4 mt-12 font-display text-xl font-semibold" data-aos="fade-up">Rate Card Live Streaming</h3>
+      
+      <h3 className="mb-4 mt-12 font-display text-xl font-semibold" data-aos="fade-up">Rate Card Live Streaming Tiktok</h3>
       <div className="grid gap-4 md:grid-cols-3">
         {D.bundles.map((b, i) => {
           const body = (
@@ -233,6 +234,62 @@ export function Pricing() {
             </div>
           );
         })}
+      </div>
+
+      <div className="mt-10 mb-4" data-aos="fade-up">
+        <p className="font-display text-xl font-semibold">Rate Card Product Review Instagram</p>
+      </div>
+
+      <div className="overflow-hidden rounded-[22px] border border-ink/10 bg-paper" data-aos="fade-up">
+        {D.ratesInstagram.map((r, index) => (
+          <div key={`${r.title}-${index}`} className="border-b border-ink/10 px-5 py-5 last:border-b-0 md:px-6">
+            <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
+              <div className="min-w-0">
+                <p className="font-display text-[15px] font-bold uppercase tracking-tight text-ink md:text-[17px]">
+                  {r.title} <span className="font-medium normal-case">• {r.volume}</span>
+                </p>
+              </div>
+
+              <p className="shrink-0 text-right font-display text-[18px] font-bold tracking-tight md:text-[22px]">
+                {r.priceLabel}
+              </p>
+            </div>
+
+            <ul className="mt-3 list-disc space-y-1.5 pl-5 text-sm leading-relaxed text-mute">
+              {r.details.map((detail) => (
+                <li key={detail}>{detail}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+
+      <div className="mt-10 mb-4" data-aos="fade-up">
+        <p className="font-display text-xl font-semibold">Paket Bundling</p>
+      </div>
+
+      <div className="overflow-hidden rounded-[22px] border border-ink/10 bg-paper" data-aos="fade-up">
+        {D.ratesBundles.map((r, index) => (
+          <div key={`${r.title}-${index}`} className="border-b border-ink/10 px-5 py-5 last:border-b-0 md:px-6">
+            <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
+              <div className="min-w-0">
+                <p className="font-display text-[15px] font-bold uppercase tracking-tight text-ink md:text-[17px]">
+                  {r.title} <span className="font-medium normal-case">• {r.volume}</span>
+                </p>
+              </div>
+
+              <p className="shrink-0 text-right font-display text-[18px] font-bold tracking-tight md:text-[22px]">
+                {r.priceLabel}
+              </p>
+            </div>
+
+            <ul className="mt-3 list-disc space-y-1.5 pl-5 text-sm leading-relaxed text-mute">
+              {r.details.map((detail) => (
+                <li key={detail}>{detail}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
 
       <div className="mt-4 flex flex-col items-start justify-between gap-4 rounded-3xl bg-ink p-6 text-cream md:flex-row md:items-center md:p-8" data-aos="fade-up">
